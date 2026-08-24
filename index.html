@@ -1,6 +1,7 @@
 <!DOCTYPE html> 
-<html>
+<html lang="es">
     <head>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Weather App</title>
         <link rel="stylesheet" href="style.css">
@@ -11,8 +12,11 @@
                 <input type="text" placeholder="Ciudad" spellcheck="false">
                 <button> <img src="img/search.png" alt="search"> </button>
             </div>
+            <div class="error">
+                <p>Ciudad no encontrada</p>
+            </div>
             <div class="weather">
-                <img src="img/rain.png" alt="" class="weater-icon">
+                <img src="img/rain.png" alt="" class="weather-icon">
                 <h1 class="temp">22°C</h1>
                 <h2 class="city">Manzanillo</h2> 
                 <div class="details">
@@ -26,12 +30,15 @@
                     <div class="col">
                         <img src="img/wind.png" alt="">
                         <div>
-                            <p class="humidity">15 km/h</p>
+                            <p class="wind">15 km/h</p>
                             <p>Viento</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <script src="script.js"></script>
+
     </body>
 </html>
